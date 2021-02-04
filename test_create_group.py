@@ -11,7 +11,6 @@ class CreateGroup(unittest.TestCase):
         self.wd = webdriver.Firefox()
         self.wd.implicitly_wait(30)
 
-    
     def test_add_group(self):
         wd = self.wd
         self.open_home_page(wd)
