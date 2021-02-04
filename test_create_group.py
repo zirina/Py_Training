@@ -14,17 +14,11 @@ class CreateGroup(unittest.TestCase):
     
     def test_add_group(self):
         wd = self.wd
-
         self.open_home_page(wd)
-
         self.login(wd)
-
         self.open_group_page(wd)
-
         self.create_new_group(wd, Group(name = "group1", header = "1", footer = "1"))
-
         self.return_to_group_page(wd)
-
         self.logout(wd)
 
     def logout(self, wd):
